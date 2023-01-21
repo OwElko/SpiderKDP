@@ -36,7 +36,7 @@ read [contribution guidelines](https://github.com/misarb/SpiderKDP/blob/master/C
 ![](Screenshot/logo_desktop.png) 
 
 # Updated & Fixed
-by [@owelko]([https://github.com/misarb/SpiderKDP/blob/master/CONTRIBUTING.md](https://github.com/owelko)
+by [@owelko](https://github.com/owelko)
 
 # Contact
 E-mail : lahcen.boulbalah@gmail.com
