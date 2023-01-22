@@ -2,3 +2,11 @@ PyQt5
 openpyxl
 pandas
 xlwt
+jsonlib
+random2
+times
+python-time
+globe
+os-sys
+pickle-mixin
+tk
