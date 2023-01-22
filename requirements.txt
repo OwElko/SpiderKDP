@@ -10,3 +10,4 @@ globe
 os-sys
 pickle-mixin
 tk
+xlsxwriter
