@@ -175,7 +175,7 @@ class MainApp(QMainWindow, ui):
      #Save Data 
      writer.save()
 
-     QMessageBox.information(self, "SpiderKDP 1.0", " The Excel fille is Generated ")
+     QMessageBox.information(self, "SpiderKDP 1.1", " The Excel fille is Generated ")
   
 
 
@@ -186,7 +186,7 @@ class MainApp(QMainWindow, ui):
     def taps_loads(self):
         
          if (self.excel_path.text() == ""):
-             QMessageBox.information(self, "SpiderKDP 1.0", " Choose an Excel file first ")
+             QMessageBox.information(self, "SpiderKDP 1.1", " Choose an Excel file first ")
              return
 
          EmptyCheck=0
@@ -198,7 +198,7 @@ class MainApp(QMainWindow, ui):
          max_upload = self.max_upload.value()
          if max_upload >=  max_row or max_row < nbr_tabs:
              isokay=False
-             QMessageBox.information(self, "SpiderKDP 1.0", "There's something wrong with excel file !!, you need to check if numbers of liness in excel is larger than max upload and number of tabs or the excel fille is empty")               
+             QMessageBox.information(self, "SpiderKDP 1.1", "There's something wrong with excel file !!, you need to check if numbers of liness in excel is larger than max upload and number of tabs or the excel fille is empty")               
          elif max_upload <=  max_row and max_row > nbr_tabs:
 
               ######## check empty line in excel  ##########
@@ -209,10 +209,10 @@ class MainApp(QMainWindow, ui):
                          EmptyCheck=EmptyCheck + 1
                           
         #  if EmptyCheck > 0:
-        #      QMessageBox.information(self, "SpiderKDP 1.0", "some lines in excel fille is empty please fill the void") 
+        #      QMessageBox.information(self, "SpiderKDP 1.1", "some lines in excel fille is empty please fill the void") 
                             
          if isokay==True:
-            QMessageBox.information(self, "SpiderKDP 1.0", "You can LAUNCH NOW!") #### move to the next button 
+            QMessageBox.information(self, "SpiderKDP 1.1", "You can LAUNCH NOW!") #### move to the next button 
             self.launch_button.setEnabled(True)
 
     def Login(self): 
@@ -229,7 +229,7 @@ class MainApp(QMainWindow, ui):
         driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options=chrome_options)
         nbr_tabs = self.number_tabs.value()
         # except Exception as ex:
-        #     QMessageBox.information(self, "SpiderKDP 1.0", "" +str(ex)) 
+        #     QMessageBox.information(self, "SpiderKDP 1.1", "" +str(ex)) 
         #     sys.exit()
             
 
@@ -268,7 +268,7 @@ class MainApp(QMainWindow, ui):
         #   else:
             driver.get(kdp_login_link1)
         except Exception as ex:
-            QMessageBox.information(self, "SpiderKDP 1.0", "" +str(ex)) 
+            QMessageBox.information(self, "SpiderKDP 1.1", "" +str(ex)) 
             sys.exit()
 
 

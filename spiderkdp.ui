@@ -236,7 +236,7 @@
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string>www.spiderkdp.com</string>
+               <string>Rev. @owelko</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
